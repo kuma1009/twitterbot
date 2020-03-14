@@ -14,5 +14,3 @@ end
         @client.retweet(tweet.id)
     end
 end
-
-@client.update("success")
