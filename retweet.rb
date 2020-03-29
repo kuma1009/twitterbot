@@ -9,8 +9,8 @@ require 'twitter'
 end
 
 # PRODUCTION ENVIRONMENT -----------------------------------
-@client.list_timeline("nananekirinuki", "nanane").each do |tweet|
-    if tweet.user.screen_name != "nananekirinuki" && !tweet.retweeted? && !tweet.full_text.include?("specified word")
+@client.list_timeline("NNNkirinuki", "nanane").each do |tweet|
+    if tweet.user.screen_name != "NNNNkirinuki" && !tweet.retweeted? && !tweet.full_text.include?("specified word")
         @client.retweet(tweet.id)
     end
 end
